@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title">
+  <title>Guide image placeholder</title>
+  <defs>
+    <linearGradient id="background" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#273968"/>
+      <stop offset="1" stop-color="#151c35"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="420" fill="url(#background)"/>
+  <circle cx="970" cy="110" r="170" fill="#8ea9ff" opacity=".15"/>
+  <circle cx="170" cy="350" r="220" fill="#8ea9ff" opacity=".1"/>
+  <text x="600" y="220" fill="#f5f7ff" font-family="Arial, sans-serif" font-size="42" text-anchor="middle">Your guide image</text>
+</svg>
