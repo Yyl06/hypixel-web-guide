@@ -40,8 +40,8 @@
 
         <h2 id="table-indication">Table Indication</h2>
         <div class="table-scroll">
-          <table>
-            <caption>Profile comparison</caption>
+          <table class="gemstone-table">
+            <caption style="text-align: center;">Profile comparison</caption>
             <tr>
               <th>Task</th>
               <th>Normal Profiles</th>
@@ -79,15 +79,12 @@
         <div class="guide-card">
           <span class="card-label">Gemstone Fortunes</span>
           <div class="table-scroll">
-            <table>
-              <caption>Fortune values by gemstone tier and rarity</caption>
+            <table style="text-align: center;">
+              <caption style="text-align: center;">Fortune values by gemstone tier and rarity</caption>
             <tr>
-              <th style="position: relative; padding: 0; width: 150px; height: 60px;">
-                <svg style="position:absolute; top:0; left:0;" width="150" height="60">
-                  <line x1="0" y1="0" x2="150" y2="60" stroke="black" stroke-width="1"/>
-                </svg>
-                <span style="position: absolute; top: 4px; right: 8px; font-weight: bold;">Rarity</span>
-                <span style="position: absolute; bottom: 4px; left: 8px; font-weight: bold;">Gemstone Tier</span>
+              <th class="gemstone-corner">
+                <span class="corner-rarity">Rarity</span>
+                <span class="corner-tier">Tiers</span>
               </th>
               <th>Common</th>
               <th>Uncommon</th>
@@ -98,7 +95,7 @@
             </tr>
 
             <tr>
-              <td style="color: gray;"><strong>Rough</strong></td>
+              <td class="gemstone-rough"><strong>Rough</strong></td>
               <td>+0.5</td>
               <td>+1</td>
               <td>+1.5</td>
@@ -108,7 +105,7 @@
             </tr>
 
             <tr>
-              <td style="color: greenyellow;"><strong>Flawed</strong></td>
+              <td class="gemstone-flawed"><strong>Flawed</strong></td>
               <td>+1</td>
               <td>+1.5</td>
               <td>+2</td>
@@ -118,7 +115,7 @@
             </tr>
 
             <tr>
-              <td style="color: royalblue;"><strong>Fine</strong></td>
+              <td class="gemstone-fine"><strong>Fine</strong></td>
               <td>+1.5</td>
               <td>+2</td>
               <td>+3</td>
@@ -128,7 +125,7 @@
             </tr>
 
             <tr>
-              <td style="color: purple;"><strong>Flawless</strong></td>
+              <td class="gemstone-flawless"><strong>Flawless</strong></td>
               <td>+2</td>
               <td>+3</td>
               <td>+4</td>
@@ -138,7 +135,7 @@
             </tr>
 
             <tr>
-              <td style="color: yellow;"><strong>Perfect</strong></td>
+              <td class="gemstone-perfect"><strong>Perfect</strong></td>
               <td>+3</td>
               <td>+4</td>
               <td>+5</td>
@@ -177,28 +174,35 @@
 
             <p>Farmhand Armor requires <strong>Farming 3</strong> to be used, in order to craft it, you need <strong>Wheat Collection 2</strong> to craft.
               It requires <strong>196 Wheat</strong> to craft. (40 for Helmet, 64 for Chestplate, 56 for Leggings, 36 for Boots)</p>
+            <br>
 
             <p>Haymaker Armor requires <strong>Farming X(10)</strong> to be used, in order to craft it, you need <strong>Wheat Collection 6</strong>to craft.
               It requires <strong>32 Enchanted Wheat</strong> to craft. (8 each for each pieces)</p>
+            <br>
 
             <p>Sprout Armor requires <strong>Farming (Yet to know)</strong> to be used, in order to craft it, you need <strong>Carrot Collection 7</strong> to craft.
               It requires <strong>256 Enchanted Carrots</strong> to craft. (64 each for each piece)</p>
+            <br>
 
             <p>Tater Armor requires <strong>Farming 20</strong> to be used, in order to craft it. It requires <strong>1024 Enchanted Potato</strong> to craft (256 each for each piece)</p>
+            <br>
 
             <p>After obtaining Tater Set, you can farm <strong>Wheat, Carrot, Potato</strong> any 1 of them with a 0.05% chance of to drop a Cropie, and the Cropie Talisman. 
               You’ll need <strong>80 Cropies, 40 Enchanted Hay Bale, 18 Box of Seeds, 45 Enchanted Baked Potato, 30 Enchanted Golden Carrot</strong> for the whole 4/4 set, 
               256 Cropies for the Cropie Talisman.</p>
-             
+            <br>
+
             <p>After getting the Cropie set, farming Pumpkin, Melon, and Cocoa Beans have a 0.03% chance of dropping Squash while wearing 4/4 of the set. 
               It requires <strong>80 Squashes, 36 Polished Pumpkins, 144 Enchanted Melon Blocks, 50 Enchanted Cookie</strong> to craft from Cropie.</p>
+            <br>
 
-            <p>Squash, farming Sugar Cane, Cactus, Mushroom and Nether Warts will drop Fermento, with a 0.007% chance of dropping when wearing 4/4 of the set, with 0 OB. 
-              It requires 8 Condensed Fermento(1 Condensed is crafted by using 9 Fermentos) to get it.</p> 
+            <p>Squash, farming Sugar Cane, Cactus, Mushroom and Nether Warts will drop Fermento, with a 0.007% chance of dropping when wearing 4/4 of the set. 
+              It requires 8 Condensed Fermento(1 Condensed is crafted by using 9 Fermentos), 96 Enchanted Sugar Cane, 64 of each Enchanted Mushroom Block, 70 Mutated Nether Warts and 25 Enchanted Cactus to craft.</p> 
+            <br>
 
-            <p>You are now on the Last Tier of the armor, Helianthus, by farming Sunflowers (Set your Garden time to Day), 
-              Moonflowers (Set your Garden time to Night), Wild Roses, with a 0.004% chance of dropping a Helianthus with 0 OB. 
-              It also requires 8 Condensed Helianthus (1 Condensed is crafted by using 9 Helianthus) to get it.</p>
+            <p>You are now on the Last Tier of the armor, Helianthus, by farming Sunflowers (Set your Garden time to Day), Moonflowers (Set your Garden time to Night), Wild Roses, with a 0.004% chance of dropping a Helianthus. 
+              It also requires 8 Condensed Helianthus (1 Condensed is crafted by using 9 Helianthus), 3 Stacks of Compacted Wild Rose, 4 Stacks of Compacted Sunflower and Moonflower to craft.</p>
+            <br>
           </div>
         </div>
 

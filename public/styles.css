@@ -456,6 +456,114 @@ body {
   font-size: 0.9rem;
 }
 
+.table-scroll {
+  margin: 20px 0;
+  overflow-x: auto;
+  border-radius: 8px;
+}
+
+.article-content table {
+  width: 100%;
+  min-width: 620px;
+  border: 1px solid #53658f;
+  border-collapse: collapse;
+  background: rgba(13, 18, 32, 0.45);
+  color: #f5f7ff;
+  font-size: 0.95rem;
+}
+
+.article-content .gemstone-table {
+  table-layout: fixed;
+}
+
+.article-content .gemstone-table th:not(.gemstone-corner),
+.article-content .gemstone-table td:not(:first-child) {
+  width: calc((100% - 150px) / 6);
+}
+
+.article-content caption {
+  border: 1px solid #53658f;
+  border-bottom: 0;
+  background: rgba(39, 54, 94, 0.55);
+  padding: 12px 14px;
+  color: #f5f7ff;
+  font-weight: 700;
+  text-align: left;
+}
+
+.article-content th,
+.article-content td {
+  border: 1px solid #53658f;
+  padding: 12px 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.article-content th {
+  background: rgba(39, 54, 94, 0.75);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.article-content .gemstone-corner {
+  position: relative;
+  width: 150px;
+  min-width: 150px;
+  height: 60px;
+  padding: 0;
+  overflow: hidden;
+  background:
+    linear-gradient(
+      to top right,
+      transparent calc(50% - 0.5px),
+      #53658f calc(50% - 0.5px),
+      #53658f calc(50% + 0.5px),
+      transparent calc(50% + 0.5px)
+    ),
+    rgba(39, 54, 94, 0.75);
+}
+
+.gemstone-corner span {
+  position: absolute;
+  z-index: 1;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.gemstone-corner .corner-rarity {
+  top: 9px;
+  right: 10px;
+}
+
+.gemstone-corner .corner-tier {
+  bottom: 9px;
+  left: 10px;
+}
+
+.article-content tr:nth-child(even) td {
+  background: rgba(39, 54, 94, 0.22);
+}
+
+.article-content .gemstone-rough {
+  color: #aaaaaa;
+}
+
+.article-content .gemstone-flawed {
+  color: #55ff55;
+}
+
+.article-content .gemstone-fine {
+  color: #5555ff;
+}
+
+.article-content .gemstone-flawless {
+  color: #aa00aa;
+}
+
+.article-content .gemstone-perfect {
+  color: #ffaa00;
+}
+
 .info-card {
   margin: 24px 0;
   border-left: 2px solid #7185bc;
