@@ -456,6 +456,183 @@ body {
   font-size: 0.9rem;
 }
 
+.equipment-showcase {
+  margin: 18px 0 28px;
+  text-align: center;
+}
+
+.equipment-icons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.equipment-item {
+  position: relative;
+  display: inline-flex;
+  cursor: help;
+}
+
+.equipment-item > img {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #65749d;
+  border-radius: 4px;
+  background: #171d2d;
+  image-rendering: pixelated;
+  object-fit: contain;
+}
+
+.equipment-tooltip {
+  position: absolute;
+  z-index: 5;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  width: 260px;
+  padding: 12px;
+  transform: translateX(-50%) scale(0.96);
+  transform-origin: bottom center;
+  border: 2px solid #aa00aa;
+  border-radius: 3px;
+  background: #071225;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.55);
+  color: #d9e2f2;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 140ms ease, transform 140ms ease;
+  text-align: left;
+}
+
+.equipment-tooltip::after {
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  transform: translateX(-50%) rotate(45deg);
+  border-right: 2px solid #aa00aa;
+  border-bottom: 2px solid #aa00aa;
+  background: #071225;
+  content: "";
+}
+
+.equipment-tooltip strong {
+  color: #d35cff;
+  font-size: 1rem;
+}
+
+.tooltip-stat b {
+  color: #ff5555;
+}
+
+.tooltip-muted {
+  color: #9aa2b2;
+}
+
+.tooltip-blue {
+  color: #55aaff;
+}
+
+.tooltip-orange {
+  color: #ffaa00;
+}
+
+.tooltip-yellow {
+  color: #ffff55;
+}
+
+.tooltip-green {
+  color: #55ff55;
+}
+
+.tooltip-red {
+  color: #ff5555;
+}
+
+.tooltip-cyan {
+  color: #55ffff;
+}
+
+.tooltip-purple {
+  color: #aa00aa;
+}
+
+.tooltip-epic-text {
+  color: #aa00aa;
+  font-weight: 700;
+}
+
+.tooltip-mythic {
+  color: #ff55ff;
+  font-weight: 700;
+}
+
+.equipment-tooltip .rarity-common,
+.equipment-tooltip .rarity-uncommon,
+.equipment-tooltip .rarity-rare,
+.equipment-tooltip .rarity-epic,
+.equipment-tooltip .rarity-legendary {
+  font-weight: 700;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.65);
+}
+
+.equipment-tooltip .rarity-common {
+  color: #f9f9f9;
+}
+
+.equipment-tooltip .rarity-uncommon {
+  color: #55ff55;
+}
+
+.equipment-tooltip .rarity-rare {
+  color: #5555ff;
+}
+
+.equipment-tooltip .rarity-epic {
+  color: #aa00aa;
+}
+
+.equipment-tooltip .rarity-legendary {
+  color: #ffaa00;
+}
+
+.tooltip-bonus {
+  color: #55ff55;
+}
+
+.tooltip-requirement {
+  color: #ff5555;
+}
+
+.tooltip-rarity {
+  color: #aa00aa;
+  font-weight: 700;
+}
+
+.tooltip-legendary {
+  color: #ffaa00;
+  font-weight: 700;
+}
+
+.tooltip-rare-text {
+  color: #5555ff;
+}
+
+.equipment-item:hover .equipment-tooltip,
+.equipment-item:focus .equipment-tooltip,
+.equipment-item:focus-within .equipment-tooltip {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+}
+
+.equipment-showcase p {
+  margin: 0;
+}
+
 .table-scroll {
   margin: 20px 0;
   overflow-x: auto;
@@ -562,6 +739,47 @@ body {
 
 .article-content .gemstone-perfect {
   color: #ffaa00;
+}
+
+.article-content .gemstone-table .rarity-common,
+.article-content .gemstone-table .rarity-uncommon,
+.article-content .gemstone-table .rarity-rare,
+.article-content .gemstone-table .rarity-epic,
+.article-content .gemstone-table .rarity-legendary,
+.article-content .gemstone-table .rarity-mythic,
+.article-content .gemstone-table .rarity-divine {
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.65);
+}
+
+.article-content .gemstone-table .rarity-common {
+  color: #f9f9f9;
+}
+
+.article-content .gemstone-table .rarity-uncommon {
+  color: #55ff55;
+}
+
+.article-content .gemstone-table .rarity-rare {
+  color: #5555ff;
+}
+
+.article-content .gemstone-table .rarity-epic {
+  color: #aa00aa;
+}
+
+.article-content .gemstone-table .rarity-legendary {
+  color: #ffaa00;
+}
+
+.article-content .gemstone-table .rarity-mythic {
+  color: #ff55ff;
+}
+
+.article-content .gemstone-table .rarity-divine {
+  color: #55ffff;
 }
 
 .info-card {
