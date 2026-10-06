@@ -571,6 +571,74 @@ body {
   font-weight: 700;
 }
 
+.overbloom-label {
+  color: #ffff55;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.65);
+}
+
+.overbloom-label::before {
+  content: "✿ ";
+}
+
+.farming-fortune-label {
+  color: #ffaa00;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.65);
+}
+
+.farming-fortune-label::before {
+  display: inline-block;
+  width: 0.85em;
+  height: 0.85em;
+  margin-right: 0.2em;
+  background: url("https://hypixelskyblock.minecraft.wiki/images/Farming_Fortune_Stat_Icon_%28v2%29.png?c6b50") center / contain no-repeat;
+  content: "";
+  vertical-align: -0.08em;
+}
+
+.peridot-label {
+  color: #55ff55;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.65);
+}
+
+.peridot-label::before {
+  display: inline-block;
+  width: 0.85em;
+  height: 0.85em;
+  margin-right: 0.2em;
+  background: url("https://hypixelskyblock.minecraft.wiki/images/Rough_Peridot_Gemstone.png?2ffcb") center / contain no-repeat;
+  content: "";
+  vertical-align: -0.08em;
+}
+
+.bonus-pest-label {
+  color: #55ff55;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.65);
+}
+
+.bonus-pest-label::before {
+  display: inline-block;
+  width: 0.85em;
+  height: 0.85em;
+  margin-right: 0.2em;
+  background: url("https://hypixelskyblock.minecraft.wiki/images/Bonus_Pest_Chance_Stat_Icon_%28v2%29.png?df8e2") center / contain no-repeat;
+  content: "";
+  vertical-align: -0.08em;
+}
+
+.crop-fortune-label {
+  color: #ffaa00;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.65);
+}
+
+.crop-fortune-label::before {
+  content: "⚑ ";
+}
+
 .equipment-tooltip .rarity-common,
 .equipment-tooltip .rarity-uncommon,
 .equipment-tooltip .rarity-rare,
